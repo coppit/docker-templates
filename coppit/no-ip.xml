@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>No-Ip</Name>
+  <Description>
+    No-Ip is a dynamic DNS service, with a free tier supporting up to three domain names.[br][br]
+    For usage information, visit [b]https://registry.hub.docker.com/u/coppit/no-ip/[/b].
+  </Description>
+  <Overview>
+    No-Ip is a dynamic DNS service, with a free tier supporting up to three domain names.
+  </Overview>
+  <Support>ihttp://lime-technology.com/forum/index.php?topic=34876.0</Support>
+  <Registry>https://registry.hub.docker.com/u/coppit/no-ip/</Registry>
+  <GitHub>https://github.com/coppit/docker-no-ip</GitHub>
+  <Repository>coppit/no-ip</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort></ContainerPort>
+        <Protocol></Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://lh3.googleusercontent.com/-g1QIBrotUJ8/AAAAAAAAAAI/AAAAAAAAAQs/AVFA8KoBMn0/s120-c/photo.jpg</Icon>
+</Containers>
