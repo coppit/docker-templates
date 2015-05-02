@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <Name>Mumble Server (Murmur)</Name>
+  <Name>Mumble Server</Name>
   <Description>
     Mumble is a voice over IP (VoIP) application primarily designed for use by gamers.[br][br]
+    This is a container for the Mumble server, AKA "Murmur".[br][br]
     For usage information, visit [b]https://registry.hub.docker.com/u/coppit/mumble-server/[/b].
   </Description>
   <Overview>
