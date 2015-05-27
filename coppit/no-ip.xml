@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <Beta>False</Beta>
+<Category>Network:DNS</Category>
   <Name>No-Ip</Name>
   <Description>
     No-Ip is a dynamic DNS service, with a free tier supporting up to three domain names.[br][br]
