@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <Beta>False</Beta>
+<Category>Network:DNS</Category>
   <Name>Duck DNS</Name>
   <Description>
     Duckdns is a free dynamic DNS service hosted on Amazon VPC.[br][br]
