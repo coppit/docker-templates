@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
   <Name>Mumble Server</Name>
+  <Beta>False</Beta>
+  <Category>Network:Voip</Category>
   <Description>
     Mumble is a voice over IP (VoIP) application primarily designed for use by gamers.[br][br]
     This is a container for the Mumble server, AKA "Murmur".[br][br]
