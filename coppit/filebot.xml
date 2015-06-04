@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+  <Category>Tools:</Category>
+  <Name>FileBot</Name>
+  <Description>
+    FileBot is the ultimate tool for renaming your tv shows and anime, downloading subtitles from various sources or
+    just simple file verification.[br][br]
+    For usage information, visit [b]https://registry.hub.docker.com/u/coppit/filebot/[/b].
+  </Description>
+  <Overview>
+    FileBot is a media file organizer. Drop files into the input directory, and
+    they'll be cleaned up and moved to the output directory.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=40400.0</Support>
+  <Registry>https://registry.hub.docker.com/u/coppit/filebot/</Registry>
+  <GitHub>https://github.com/coppit/docker-filebot</GitHub>
+  <Repository>coppit/filebot</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort></ContainerPort>
+        <Protocol></Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/input</ContainerDir>
+      <Mode>r</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/output</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/output</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner>http://www.filebot.net/forums/styles/absolution/imageset/logo.filebot.png</Banner>
+  <Icon>http://www.filebot.net/images/filebot.logo.png</Icon>
+</Containers>
