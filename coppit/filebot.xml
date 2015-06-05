@@ -52,6 +52,6 @@
     </Volume>
   </Data>
   <WebUI></WebUI>
-  <Banner>http://www.filebot.net/forums/styles/absolution/imageset/logo.filebot.png</Banner>
-  <Icon>http://www.filebot.net/images/filebot.logo.png</Icon>
+  <Banner></Banner>
+  <Icon>http://www.filebot.net/icon.png</Icon>
 </Containers>
