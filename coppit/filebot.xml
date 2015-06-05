@@ -47,7 +47,7 @@
     </Volume>
     <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/output</ContainerDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
