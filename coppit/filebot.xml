@@ -38,7 +38,7 @@
     <Volume>
       <HostDir></HostDir>
       <ContainerDir>/input</ContainerDir>
-      <Mode>r</Mode>
+      <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir></HostDir>
