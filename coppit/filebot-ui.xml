@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <Beta>False</Beta>
+  <Beta>True</Beta>
   <Category>Tools:</Category>
   <Name>FileBot UI</Name>
+  <Date>2015-06-14</Date>
   <Description>
     FileBot is the ultimate tool for renaming your tv shows and anime, downloading subtitles from various sources or
     just simple file verification. This container provides a UI, accessible via remote desktop.[br][br]
