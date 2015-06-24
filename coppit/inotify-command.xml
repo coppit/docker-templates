@@ -26,8 +26,16 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name></Name>
-      <Value></Value>
+      <Name>UGID</Name>
+      <Value>99:100</Value>
+    </Variable>
+    <Variable>
+      <Name>UMAP</Name>
+      <Value>nobody:99:100</Value>
+    </Variable>
+    <Variable>
+      <Name>GMAP</Name>
+      <Value>users:100</Value>
     </Variable>
   </Environment>    
   <Data>
