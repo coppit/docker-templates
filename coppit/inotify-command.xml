@@ -26,10 +26,6 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name>UGID</Name>
-      <Value>99:100</Value>
-    </Variable>
-    <Variable>
       <Name>UMAP</Name>
       <Value>nobody:99:100</Value>
     </Variable>

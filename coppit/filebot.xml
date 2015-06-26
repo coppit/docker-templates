@@ -30,8 +30,16 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name>UGID</Name>
-      <Value>99:100</Value>
+      <Name>USER_ID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>GROUP_ID</Name>
+      <Value>100</Value>
+    </Variable>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>0000</Value>
     </Variable>
   </Environment>    
   <Data>
