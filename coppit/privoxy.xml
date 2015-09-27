@@ -10,9 +10,11 @@
     Once the container is started, update your computer's proxy settings to use your unRAID server, port 8118 (or
     whatever you configured the port to be).[br][br]
 
-    Point your web browser to http://config.privoxy.org/show-status to check Privoxy status.[br][br]
+    Point your web browser to [url]http://config.privoxy.org/show-status[/url] to check Privoxy status.[br][br]
 
     [b]Note that this container does not save any changes you make. So don't bother configuring it.[/b][br][br]
+
+    [b]Note that if your unRAID server is down, your internet won't work because the proxy won't be running.[/b][br][br]
 
     Note that I didn't create this Docker image. I'm just creating a template for unRAID.
   </Description>
