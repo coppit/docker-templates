@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+  <Category>Network:Proxy</Category>
+  <Name>Privoxy</Name>
+  <Description>
+    Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data
+    and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.[br][br]
+
+    Once the container is started, update your computer's proxy settings to use your unRAID server, port 8118 (or
+    whatever you configured the port to be).[br][br]
+
+    Point your web browser to http://config.privoxy.org/show-status to check Privoxy status.[br][br]
+
+    [b]Note that this container does not save any changes you make. So don't bother configuring it.[/b][br][br]
+
+    Note that I didn't create this Docker image. I'm just creating a template for unRAID.
+  </Description>
+  <Overview>
+    Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data
+    and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=43151.0</Support>
+  <Registry>https://registry.hub.docker.com/u/coppit/privoxy/</Registry>
+  <GitHub>https://github.com/carbonsphere/dock-privoxy</GitHub>
+  <Repository>carbonsphere/dock-privoxy</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8118</HostPort>
+        <ContainerPort>8118</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+  </Environment>    
+  <Data>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://vpnpick.com/wp-content/uploads/2015/07/Hamachi-2.png</Icon>
+</Containers>
