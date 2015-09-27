@@ -21,7 +21,7 @@
     and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=43151.0</Support>
-  <Registry>https://registry.hub.docker.com/u/coppit/privoxy/</Registry>
+  <Registry>https://hub.docker.com/r/carbonsphere/dock-privoxy/</Registry>
   <GitHub>https://github.com/carbonsphere/dock-privoxy</GitHub>
   <Repository>carbonsphere/dock-privoxy</Repository>
   <BindTime>true</BindTime>
