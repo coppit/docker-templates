@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+  <Category>Network:Proxy</Category>
+  <Name>DansGuardian</Name>
+  <Description>
+    DansGuardian is a web content filter. It blocks naughty bits on the Web.[br][br]
+
+    Once the container is started, update your computer's proxy settings to use your unRAID server, port 8080 (or
+    whatever you configured the port to be).[br][br]
+
+    This container works well with Privoxy. Just set PROXYIP to your server IP, and PROXYPORT to your Privoxy port (8118
+    by default).[br][br]
+
+    [b]Note that if your unRAID server is down, your internet won't work because the proxy won't be running.[/b][br][br]
+  </Description>
+  <Overview>
+    
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=43151.0</Support>
+  <Registry>https://hub.docker.com/r/coppit/dansguardian/</Registry>
+  <GitHub>https://github.com/coppit/docker-dansguardian</GitHub>
+
+  docker run -d --name dansguardian -v /mnt/vms/docker-config/dansguardian:/config -p 8080:8080 -e PROXYIP=192.168.1.100
+  -e PROXYPORT=8118 -t coppit/dansguardian
+
+  <Repository>coppit/dansguardian</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>PROXYIP</Name>
+      <Value>127.0.0.1</Value>
+    </Variable>
+    <Variable>
+      <Name>PROXYPORT</Name>
+      <Value>3128</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/coppit/docker-dansguardian/master/dansguardian.png</Icon>
+</Containers>
