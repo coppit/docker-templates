@@ -42,7 +42,7 @@
   </Environment>    
   <Data>
   </Data>
-  <WebUI></WebUI>
+  <WebUI>http://config.privoxy.org/show-status</WebUI>
   <Banner></Banner>
   <Icon>http://vpnpick.com/wp-content/uploads/2015/07/Hamachi-2.png</Icon>
 </Containers>
