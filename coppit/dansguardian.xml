@@ -15,15 +15,11 @@
     [b]Note that if your unRAID server is down, your internet won't work because the proxy won't be running.[/b][br][br]
   </Description>
   <Overview>
-    
+  DansGuardian is content-control software: software designed to control which websites users can access. It also includes virus filtering and usage monitoring features.
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=43151.0</Support>
   <Registry>https://hub.docker.com/r/coppit/dansguardian/</Registry>
   <GitHub>https://github.com/coppit/docker-dansguardian</GitHub>
-
-  docker run -d --name dansguardian -v /mnt/vms/docker-config/dansguardian:/config -p 8080:8080 -e PROXYIP=192.168.1.100
-  -e PROXYPORT=8118 -t coppit/dansguardian
-
   <Repository>coppit/dansguardian</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
