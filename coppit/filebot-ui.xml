@@ -46,7 +46,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI></WebUI>
+  <WebUI>https://[IP]:[PORT:3389]</WebUI>
   <Banner></Banner>
   <Icon>http://www.filebot.net/icon.png</Icon>
 </Containers>
