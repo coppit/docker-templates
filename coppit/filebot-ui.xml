@@ -45,6 +45,11 @@
       <ContainerDir>/output</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <WebUI>https://[IP]:[PORT:3389]</WebUI>
   <Banner></Banner>
