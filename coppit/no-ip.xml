@@ -10,7 +10,7 @@
   <Overview>
     No-Ip is a dynamic DNS service, with a free tier supporting up to three domain names.
   </Overview>
-  <Support>ihttp://lime-technology.com/forum/index.php?topic=34876.0</Support>
+  <Support>http://lime-technology.com/forum/index.php?topic=34876.0</Support>
   <Registry>https://registry.hub.docker.com/u/coppit/no-ip/</Registry>
   <GitHub>https://github.com/coppit/docker-no-ip</GitHub>
   <Repository>coppit/no-ip</Repository>
