@@ -2,13 +2,15 @@
 <Containers>
   <Beta>False</Beta>
   <Category>Network:DNS</Category>
-  <Name>No-Ip</Name>
+  <Name>NoIp</Name>
   <Description>
     No-Ip is a dynamic DNS service, with a free tier supporting up to three domain names.[br][br]
     For usage information, visit [b]https://registry.hub.docker.com/u/coppit/no-ip/[/b].
   </Description>
   <Overview>
-    No-Ip is a dynamic DNS service, with a free tier supporting up to three domain names.
+    No-Ip is a dynamic DNS service, with a free tier supporting up to three domain names. Unfortunately, those domain
+    names have to be renewed periodically. This container implements the new noip2 protocol, which uses a noip client
+    provided by no-ip.com.
   </Overview>
   <Support>ihttp://lime-technology.com/forum/index.php?topic=34876.0</Support>
   <Registry>https://registry.hub.docker.com/u/coppit/no-ip/</Registry>
@@ -31,7 +33,7 @@
       <Name></Name>
       <Value></Value>
     </Variable>
-  </Environment>    
+  </Environment>
   <Data>
     <Volume>
       <HostDir></HostDir>
