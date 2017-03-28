@@ -12,7 +12,7 @@
     names have to be renewed periodically. This container implements the new noip2 protocol, which uses a noip client
     provided by no-ip.com.
   </Overview>
-  <Support>ihttp://lime-technology.com/forum/index.php?topic=34876.0</Support>
+  <Support>http://lime-technology.com/forum/index.php?topic=34876.0</Support>
   <Registry>https://registry.hub.docker.com/u/coppit/no-ip/</Registry>
   <GitHub>https://github.com/coppit/docker-no-ip</GitHub>
   <Repository>coppit/no-ip</Repository>
