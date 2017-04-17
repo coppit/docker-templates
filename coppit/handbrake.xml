@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>HandBrake</Name>
+  <Beta>False</Beta>
+  <Project>https://handbrake.fr/</Project>
+  <Changes>
+  </Changes>
+  <Category>MediaApp:Video</Category>
+  <Support>https://forums.lime-technology.com/topic/56647-handbrake/</Support>
+  <Description>
+    HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported
+    codecs.[br][br]Full GUI in a RDP container accessible via browser.[br]Use the /media mapping for movies to be
+    converted.[br]The /config mapping is for storing settings for handbrake. /watch is a watch folder. Files dropped
+    into this folder will be automatically converted into /output.[br][br][b]To increase screen resolution, set the
+    HEIGHT and WIDTH environment variables.[/b] To allow HandBrake to be run at a lower priority, add
+    [b]--cap-add=SYS_NICE[/b] under the extra params setting. For additional usage information, visit
+    [b]https://hub.docker.com/r/coppit/handbrake/[/b].
+  </Description>
+  <Overview>
+    HandBrake is a video encoder. Connect using an RDP client or web browser, or use the fully automated watch folder.
+  </Overview>
+  <Registry>https://hub.docker.com/r/coppit/handbrake/</Registry>
+  <Repository>coppit/handbrake</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>WIDTH</Name>
+      <Value>1280</Value>
+    </Variable>
+    <Variable>
+      <Name>HEIGHT</Name>
+      <Value>720</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3389</HostPort>
+        <ContainerPort>3389</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/watch</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/output</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8080]/#/client/c/HandBrake</WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/coppit/docker-handbrake/master/handbrake_logo.png</Icon>
+  <ExtraParams>--cap-add=SYS_NICE</ExtraParams>
+</Container>
