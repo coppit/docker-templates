@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Beta>True</Beta>
-  <Category>Tools:</Category>
+<Container>
   <Name>FileBot UI</Name>
+  <Beta>True</Beta>
+  <Project>http://www.filebot.net/</Project>
+  <Changes>
+  </Changes>
+  <Category>Tools:</Category>
+  <Support>http://lime-technology.com/forum/index.php?topic=40400.0</Support>
   <Date>2015-06-14</Date>
   <Description>
     FileBot is the ultimate tool for renaming your tv shows and anime, downloading subtitles from various sources or
@@ -12,28 +16,35 @@
   <Overview>
     FileBot is a media file organizer. Connect using an RDP client, finding files in /input that get renamed to /output.
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=40400.0</Support>
-  <Registry>https://registry.hub.docker.com/u/coppit/filebot-ui/</Registry>
-  <GitHub>https://github.com/coppit/docker-filebot-ui</GitHub>
+  <Registry>https://hub.docker.com/r/coppit/filebot-ui/</Registry>
   <Repository>coppit/filebot-ui</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-    <Networking>
+  <Environment>
+    <Variable>
+      <Name>WIDTH</Name>
+      <Value>1280</Value>
+    </Variable>
+    <Variable>
+      <Name>HEIGHT</Name>
+      <Value>720</Value>
+    </Variable>
+  </Environment>
+  <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>3389</HostPort>
         <ContainerPort>3389</ContainerPort>
-        <Protocol>RDP</Protocol>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name></Name>
-      <Value></Value>
-    </Variable>
-  </Environment>    
   <Data>
     <Volume>
       <HostDir></HostDir>
@@ -51,7 +62,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>https://[IP]:[PORT:3389]</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/#/client/c/Filebot</WebUI>
   <Banner></Banner>
-  <Icon>http://www.filebot.net/icon.png</Icon>
-</Containers>
+<Icon>https://raw.githubusercontent.com/coppit/docker-filebot-ui/master/filebot.png</Icon>
+</Container>
