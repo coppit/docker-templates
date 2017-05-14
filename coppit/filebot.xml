@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Beta>False</Beta>
-  <Category>Tools:</Category>
+<Container>
   <Name>FileBot</Name>
+  <Beta>False</Beta>
+  <Project>http://www.filebot.net/</Project>
+  <Changes>
+  </Changes>
+  <Category>Tools:</Category>
+  <Support>https://forums.lime-technology.com/topic/38720-filebot-containers/</Support>
+  <Date>2016-05-14</Date>
   <Description>
     FileBot is the ultimate tool for renaming your tv shows and anime, downloading subtitles from various sources or
-    just simple file verification. This container automatically renames and organizes files.[br][br]
-    For usage information, visit [b]https://registry.hub.docker.com/u/coppit/filebot/[/b].
+    just simple file verification. This container automatically renames and organizes files, but it can also be used
+    with a user interface.[br][br]
+    For usage information, visit [b]https://hub.docker.com/r/coppit/filebot/[/b].
   </Description>
   <Overview>
     FileBot is a media file organizer. Drop files into the input directory, and
-    they'll be cleaned up and moved to the output directory.
+    they'll be cleaned up and moved to the output directory. Or use the UI!
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=40400.0</Support>
-  <Registry>https://registry.hub.docker.com/u/coppit/filebot/</Registry>
-  <GitHub>https://github.com/coppit/docker-filebot</GitHub>
+  <Registry>https://hub.docker.com/r/coppit/filebot/</Registry>
   <Repository>coppit/filebot</Repository>
+  <GitHub>https://github.com/coppit/docker-filebot</GitHub>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-    <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort></HostPort>
-        <ContainerPort></ContainerPort>
-        <Protocol></Protocol>
-      </Port>
-    </Publish>
-  </Networking>
   <Environment>
+    <Variable>
+      <Name>WIDTH</Name>
+      <Value>1280</Value>
+    </Variable>
+    <Variable>
+      <Name>HEIGHT</Name>
+      <Value>720</Value>
+    </Variable>
     <Variable>
       <Name>USER_ID</Name>
       <Value>99</Value>
@@ -42,6 +45,21 @@
       <Value>0000</Value>
     </Variable>
   </Environment>    
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3389</HostPort>
+        <ContainerPort>3389</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
   <Data>
     <Volume>
       <HostDir></HostDir>
@@ -59,7 +77,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI></WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/#/client/c/Filebot</WebUI>
   <Banner></Banner>
-  <Icon>http://www.filebot.net/icon.png</Icon>
-</Containers>
+<Icon>https://raw.githubusercontent.com/coppit/docker-filebot-ui/master/filebot.png</Icon>
+</Container>
