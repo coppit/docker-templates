@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
+<Container>
   <Beta>False</Beta>
-  <Category>Network:Proxy</Category>
+  <Project>https://www.privoxy.org/</Project>
   <Name>Privoxy</Name>
+  <Changes>
+  </Changes>
+  <Category>Network:Proxy</Category>
+  <Support>https://forums.lime-technology.com/topic/41465-docker-privoxy/</Support>
   <Description>
     Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data
     and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.[br][br]
@@ -22,13 +26,18 @@
     Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data
     and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=43151.0</Support>
   <Registry>https://hub.docker.com/r/carbonsphere/dock-privoxy/</Registry>
-  <GitHub>https://github.com/carbonsphere/dock-privoxy</GitHub>
   <Repository>carbonsphere/dock-privoxy</Repository>
+  <GitHub>https://github.com/carbonsphere/dock-privoxy</GitHub>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-    <Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
@@ -38,11 +47,9 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment>
-  </Environment>    
   <Data>
   </Data>
   <WebUI>http://config.privoxy.org/show-status</WebUI>
   <Banner></Banner>
   <Icon>http://vpnpick.com/wp-content/uploads/2015/07/Hamachi-2.png</Icon>
-</Containers>
+</Container>

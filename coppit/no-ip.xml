@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
+<Container>
   <Beta>False</Beta>
-  <Category>Network:DNS</Category>
+  <Project>https://www.noip.com/</Project>
   <Name>NoIp</Name>
+  <Changes>
+  </Changes>
+  <Category>Network:DNS</Category>
+  <Support>https://forums.lime-technology.com/topic/33229-container-for-no-ip-dynamic-dns-updates/</Support>
   <Description>
     No-Ip is a dynamic DNS service, with a free tier supporting up to three domain names.[br][br]
     For usage information, visit [b]https://registry.hub.docker.com/u/coppit/no-ip/[/b].
@@ -12,13 +16,18 @@
     names have to be renewed periodically. This container implements the new noip2 protocol, which uses a noip client
     provided by no-ip.com.
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=34876.0</Support>
-  <Registry>https://registry.hub.docker.com/u/coppit/no-ip/</Registry>
-  <GitHub>https://github.com/coppit/docker-no-ip</GitHub>
+  <Registry>https://hub.docker.com/r/coppit/no-ip/</Registry>
   <Repository>coppit/no-ip</Repository>
+  <GitHub>https://github.com/coppit/docker-no-ip</GitHub>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-    <Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
@@ -28,12 +37,6 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name></Name>
-      <Value></Value>
-    </Variable>
-  </Environment>
   <Data>
     <Volume>
       <HostDir></HostDir>
@@ -43,5 +46,5 @@
   </Data>
   <WebUI></WebUI>
   <Banner></Banner>
-  <Icon>https://drive.google.com/uc?id=0B_CHo2SsFDY-dlpHZDAwWnFDd1U</Icon>
-</Containers>
+  <Icon>https://raw.githubusercontent.com/coppit/docker-no-ip/master/no-ip-hernandito.png</Icon>
+</Container>

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
+<Container>
   <Beta>False</Beta>
-  <Category>Network:DNS</Category>
+  <Project>http://www.duckdns.org/</Project>
   <Name>Duck DNS</Name>
+  <Changes>
+  </Changes>
+  <Category>Network:DNS</Category>
+  <Support>https://forums.lime-technology.com/topic/33031-container-for-duck-dns-dynamic-dns-updates/</Support>
   <Description>
     Duckdns is a free dynamic DNS service hosted on Amazon VPC.[br][br]
     For usage information, visit [b]https://registry.hub.docker.com/u/coppit/duckdns/[/b].
@@ -11,13 +15,18 @@
     Duckdns is a free dynamic DNS service hosted on Amazon VPC. 
     Unlike most other free dynamic DNS providers, DuckDNS accounts do not require periodic user action to keep them alive. Visit [b]www.duckdns.org[/b] to register your domain.
   </Overview>
-  <Support>https://lime-technology.com/forum/index.php?topic=34676.msg366921</Support>
-  <Registry>https://registry.hub.docker.com/u/coppit/duckdns/</Registry>
-  <GitHub>https://github.com/coppit/docker-duckdns</GitHub>
+  <Registry>https://hub.docker.com/r/coppit/duckdns/</Registry>
   <Repository>coppit/duckdns</Repository>
+  <GitHub>https://github.com/coppit/docker-duckdns</GitHub>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-    <Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
@@ -27,12 +36,6 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name></Name>
-      <Value></Value>
-    </Variable>
-  </Environment>    
   <Data>
     <Volume>
       <HostDir></HostDir>
@@ -42,5 +45,5 @@
   </Data>
   <WebUI></WebUI>
   <Banner></Banner>
-  <Icon>https://www.duckdns.org/favicon.ico</Icon>
-</Containers>
+  <Icon>https://raw.githubusercontent.com/coppit/docker-duckdns/master/duckdns.png</Icon>
+</Container>

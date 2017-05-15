@@ -79,5 +79,5 @@
   </Data>
   <WebUI>http://[IP]:[PORT:8080]/#/client/c/Filebot</WebUI>
   <Banner></Banner>
-<Icon>https://raw.githubusercontent.com/coppit/docker-filebot-ui/master/filebot.png</Icon>
+  <Icon>https://raw.githubusercontent.com/coppit/docker-filebot-ui/master/filebot.png</Icon>
 </Container>
