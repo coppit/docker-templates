@@ -32,6 +32,12 @@
       </Port>
     </Publish>
   </Networking>
+  <Environment>
+    <Variable>
+      <Name>VERSION</Name>
+      <Value>latest</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir></HostDir>
