@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>HandBrake</Name>
   <Beta>False</Beta>
   <Project>https://handbrake.fr/</Project>
+  <Name>HandBrake</Name>
   <Changes>
   </Changes>
   <Category>MediaApp:Video</Category>
@@ -21,6 +21,7 @@
   </Overview>
   <Registry>https://hub.docker.com/r/coppit/handbrake/</Registry>
   <Repository>coppit/handbrake</Repository>
+  <GitHub>https://github.com/coppit/docker-handbrake</GitHub>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
